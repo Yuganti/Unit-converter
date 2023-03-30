@@ -1,0 +1,46 @@
+.container {
+	background-color: aquamarine;
+	margin: auto;
+	max-width: 500px;
+	padding: 100px;
+	text-align: center;
+  }
+  
+  .form-group {
+	display: flex;
+	margin-bottom: 30px;
+	font-size: 20px;
+  }
+  
+  label {
+	flex: 1;
+	margin-right: 10px;
+	text-align: right;
+  }
+  
+  input {
+	flex: 1;
+  }
+  
+  button {
+	background-color: #15acd2;
+	border: none;
+	color: white;
+	padding: 12px 24px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 4px;
+  }
+  
+  /* Set the hover styles for the button */
+  button:hover {
+	background-color: #11c924;
+  }
+  .logo {
+	width: 100px;
+	height: 100px;
+  }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+	<style>
+		/* Set the font and border styles for the text box */
+		input[type=number] {
+		  font-family: Arial, sans-serif;
+		  font-size: 14px;
+		  border: 2px solid #ccc;
+		  border-radius: 4px;
+		  padding: 8px;
+		}
+		
+		/* Add a background color and focus styles for the text box */
+		input[type=number]:focus {
+		  outline: none;
+		  border-color: #2e2d2c;
+		  box-shadow: 0 0 8px 0 rgba(127, 212, 93, 0.5);
+		}
+	  </style>
+  </head>
+  <body>
+    
+    <div class="container">
+      <img class="logo" src="logo.png" alt="logo">
+      <h1>Unit Converter</h1><br>
+      <form>
+        <div class="form-group">
+          <label for="from-unit"><b>From:</b></label>
+          <select id="from-unit" name="from-unit">
+            <optgroup label="Length">
+              <option value="m">Meters (m)</option>
+              <option value="ft">Feet (ft)</option>
+              <option value="in">Inches (in)</option>
+              <option value="cm">Centimeters (cm)</option>
+            </optgroup>
+            <optgroup label="Weight">
+              <option value="kg">Kilograms (kg)</option>
+              <option value="g">Grams (g)</option>
+              <option value="lbs">Pounds (lbs)</option>
+            </optgroup>
+            <optgroup label="Temperature">
+              <option value="c">Celsius (°C)</option>
+              <option value="f">Fahrenheit (°F)</option>
+              <option value="k">Kelvin (K)</option>
+            </optgroup>
+          </select>
+          <input type="number" id="from-value" name="from-value">
+        </div>
+        <div class="form-group">
+          <label for="to-unit"><b>To:</b></label>
+          <select id="to-unit" name="to-unit">
+            <optgroup label="Length">
+              <option value="m">Meters (m)</option>
+              <option value="ft">Feet (ft)</option>
+              <option value="in">Inches (in)</option>
+              <option value="cm">Centimeters (cm)</option>
+            </optgroup>
+            <optgroup label="Weight">
+              <option value="kg">Kilograms (kg)</option>
+              <option value="g">Grams (g)</option>
+              <option value="lbs">Pounds (lbs)</option>
+            </optgroup>
+            <optgroup label="Temperature">
+              <option value="c">Celsius (°C)</option>
+              <option value="f">Fahrenheit (°F)</option>
+              <option value="k">Kelvin (K)</option>
+            </optgroup>
+          </select>
+          <input type="number" id="to-value" name="to-value" readonly>
+        </div>
+        <button type="button" onclick="convert()">Convert</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
